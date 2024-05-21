@@ -58,7 +58,7 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
-        {/* {cities.map((city) => (
+        {cities.map((city) => (
           <Marker
             position={[city.position?.lat, city.position?.lng]}
             key={city.id}
@@ -68,7 +68,7 @@ function Map() {
               <span>{city.cityName}</span>
             </Popup>
           </Marker>
-        ))} */}
+        ))}
         <ChangeCenter position={mapPosition} />
         <DetectClick />
       </MapContainer>
